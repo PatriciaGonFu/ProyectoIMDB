@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movies.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<script src="movies.js"></script>
+
+</head>
+<body>
+    <header>
+        <section>
+        <div class="logo-container">
+            <a href="./home.html"><img src="./IMAGENES/muchaPeli.com.png" alt=""></a>
+        </div>
+        </section>
+
+        <aside>
+            <ul>
+                <a href="./movies.html"><li>Películas</li></a>
+                <a href="./professional.html"><li>Profesionales</li></a>
+            </ul>
+        </aside>      
+    </header>
+   <main>
+
+    <div class="content">
+        <div class="card" id="volcarMovies"> 
+            <div class="img-container">
+                <img src="" alt="">
+            </div>
+            <h6></h6><br>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div> 
+    </div>
+
+        <form class="form">
+            <h2>Añade tu película si no la encuentras</h2>
+            <ul>
+                <li>
+                  <input type="text" id="title" placeholder="Título"  />
+              </li>
+      
+                <li>
+                  <input type="text" id="releaseYear" placeholder="Año" />
+                </li>
+      
+                <li>
+                  <input type="text" id="nationality" placeholder="Nacionalidad"  />
+                </li>
+      
+                <li>
+                  <input type="text" id="genre" placeholder="Género" />
+                </li>
+      
+                <li>
+                  <input type="text" id="actors" placeholder="Actores"  />
+                </li>
+
+                <li>
+                    <input type="text" id="writer" placeholder="Guionista"  />
+                  </li>
+        
+                  <li>
+                    <input type="text" id="director" placeholder="Director"  />
+                  </li>
+                  <li>
+                    <input type="text" id="photo" placeholder="URL foto"  />
+                  </li>
+              </ul>
+          <p>
+         <button type="button" onclick="cargarMovies()">Enviar</button>
+            </p>
+               
+        </form> 
+   </main>
+   <script src="movies.js"></script>
+   <script>
+       volcarMovies();
+   </script> 
+</body>
+</html>
+

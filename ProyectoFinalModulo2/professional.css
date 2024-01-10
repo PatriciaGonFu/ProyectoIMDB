@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    cursor: url(./IMAGENES/icons8-palomitas-48.png), pointer;
+}
+
+header{
+    background-color: black;
+    color: #f5ba26;
+    display: flex;
+    height: 12vh;
+    justify-content: space-between;
+    font-family: 'Anton', sans-serif;}
+
+header section, header aside{
+    width: 600px;
+}
+
+header section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container{
+    height: 66px;
+    width: 88px;
+}
+
+.logo-container img{
+    height: 100%;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    font-size: x-large;
+}
+
+a:visited{
+    color:#f5ba26;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header aside ul li:hover{
+    border: solid #f5ba26;
+    background-color: #f5ba26;
+    color: black;
+    border-radius: 10px;
+} 
+
+ main {
+    display: flex;
+    flex-direction: row;
+    min-height: 90vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#volcarDatos.card{
+    width: 100vw;
+    display: flex;
+    border-radius: 0px;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    background-image: url('./IMAGENES/camera-660090.jpg');
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    min-height: 150vh;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+.card {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 250px; 
+    width: 200px; 
+    padding: 10px;
+}
+
+.img-container {
+    height: 50%; 
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.img-container img {
+    height: 100%; 
+    width: 100%;
+}
+
+h6{
+    margin-top: 5px;
+}
+p {
+    font-size: x-small;
+} 
+
+@media screen and (max-width: 589px){
+
+    ul {
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: larger;
+    }
+    header section, header aside{
+        width: 400px;
+    }
+    .logo-container{
+        height: 60px;
+        width: 82px;
+    }
+}
